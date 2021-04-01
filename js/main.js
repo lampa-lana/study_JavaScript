@@ -5,4 +5,5 @@ let deposit = 20;
 let mission = 5;
 const period = 12;
 alert('Hello, world!');
-console.log(money+income);
+console.log(money + income);
+console.log(money + income + deposit);
