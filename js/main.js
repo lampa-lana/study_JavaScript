@@ -5,5 +5,7 @@ let deposit = 20;
 let mission = 5;
 const period = 12;
 alert('Hello, world!');
-console.log(money + income);
+console.log(' Сумма денежных средств и полученного дохода составляет:' + (money + income));
+console.log(' Сумма денежных средств, полученного дохода и депозита составляет:');
 console.log(money + income + deposit);
+
