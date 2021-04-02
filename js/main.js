@@ -1,11 +1,7 @@
-const money = 10;
-let income = 100;
-let addExpenses = -10;
-let deposit = 20;
-let mission = 5;
-const PERIOD = 12;
-alert('Hello, world!');
-console.log(' Сумма денежных средств и полученного дохода составляет:' + (money + income));
-console.log(' Сумма денежных средств, полученного дохода и депозита составляет:');
-console.log(money + income + deposit);
+let money = 800;
+let income = 'Фриланс';
+let addExpenses = 'Коммунальные платежи, расходы на транспорт, мобильный телефон, интернет';
+let deposit = true;
+let mission = 500;
+let period = 12;
 
