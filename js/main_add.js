@@ -1,20 +1,22 @@
 'use strict'
 
-let lang = 'ru';
+let arrRu = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+let arrEn = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+let lang = 'en';
 if (lang === 'ru') {
-  console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
+  console.log(arrRu.join(', '));
 } else if (lang === 'en') {
-  console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+  console.log(arrEn.join(', '));
 } else{
   console.log('Выбрать корректное значение языка');
 }
 
 switch (lang) {
   case 'ru':
-    console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
+    console.log(arrRu.join(', '));
     break;
  case 'en':
-    console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+    console.log(arrEn.join(', '));
     break;
   default:
     console.log('Выбрать корректное значение языка');
@@ -22,11 +24,10 @@ switch (lang) {
 }
 
 let arr = {
-  'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-  'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  'ru': arrRu,
+  'en': arrEn,
 };
 
-console.log(arr[lang]);
 console.log((arr[lang]).join(', '));
 
 
