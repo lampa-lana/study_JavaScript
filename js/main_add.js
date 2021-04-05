@@ -1,8 +1,8 @@
 'use strict'
 
-let lang = 'en';
+let lang = 'ru';
 if (lang === 'ru') {
-  console.log('понедельник', 'вторник', 'среда', 'чтверг', 'пятница', 'суббота', 'воскресенье');
+  console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
 } else if (lang === 'en') {
   console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
 } else{
