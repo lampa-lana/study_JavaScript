@@ -27,6 +27,7 @@ let arr = {
 };
 
 console.log(arr[lang]);
+console.log((arr[lang]).join(', '));
 
 
 let namePerson = 'Максим';
