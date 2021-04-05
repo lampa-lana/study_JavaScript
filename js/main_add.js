@@ -1,6 +1,6 @@
 'use strict'
 
-let lang = 'ru';
+let lang = 'en';
 if (lang === 'ru') {
   console.log('понедельник', 'вторник', 'среда', 'чтверг', 'пятница', 'суббота', 'воскресенье');
 } else if (lang === 'en') {
@@ -21,12 +21,12 @@ switch (lang) {
     break;
 }
 
-let arr = [
-  ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-  ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-];
-lang = true ? arr[0] : arr[1];
-console.log(lang);
+let arr = {
+  'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+  'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+};
+
+console.log(arr[lang]);
 
 
 let namePerson = 'Максим';
