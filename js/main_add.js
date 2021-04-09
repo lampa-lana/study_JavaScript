@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function onlyStringMax(arg) {
   if (typeof arg !== 'string') {
@@ -23,7 +23,7 @@ function onlyStringMin(arg1) {
   }else{
    return arg1.trim().slice(0, 27) + '...';
   }
-}
+};
 console.log(onlyStringMin('   Это оччееень длиная строка с лишними пробелами    '));
 console.log(onlyStringMin('   Это оччееень длиная строка с лишними пробелами    ').length);
 
