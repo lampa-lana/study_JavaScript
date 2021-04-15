@@ -52,18 +52,10 @@ let appData = {
         
       }
     },
-    /* let sum = 0;
-    for (let i = 0; i < 2; i++) {
-      appData.expenses[i] = prompt('Введите обязательную статью расходов?');
-      sum += +prompt('Во сколько это обойдется?');
-      while (!isNumber(sum)) {
-        sum += prompt('Во сколько это обойдется?');
-      }
-    }
-    return sum; */
+    
   
   getBudget: function () { /* getAccumulatedMonth переименовать в getBudget. Этот метод будет высчитывать значения свойств budgetMonth и budgetDay */
-    /*  return money - expensesAmount; */
+    
     appData.budgetMonth = appData.budget - appData.expensesMonth;
     appData.budgetDay = Math.floor(appData.budgetMonth / 30);
       
@@ -74,11 +66,7 @@ let appData = {
     } else {
       return ('Цель не будет достигнута');
     }
-   /*  if ((appData.mission / accumulatedMonth) > 0) {
-      return ('Срок достижения цели: ' + Math.floor(appData.mission / accumulatedMonth) + ' месяц  (-ев, а)');
-    } else {
-      return ('Цель не будет достигнута');
-    } */
+  
   },
   getStatusIncome: function () {
     if (appData.budgetDay >= 1200) {
