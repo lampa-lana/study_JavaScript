@@ -127,6 +127,7 @@ let appData = {
     additionalIncomeValue.value = appData.addIncome.join(', ');
     targetMonthValue.value = Math.ceil(appData.getTargetMonth());
     incomePeriodValue.value = appData.calcSavedMoney();
+     
 
   },
   addExpensesBlock: function () {
@@ -242,6 +243,7 @@ let appData = {
   },
   calcRange: function eventFunc(event) {
     document.querySelector('.period-amount').textContent = event.target.value;
+    incomePeriodValue.value = appData.calcSavedMoney();
   },
   stopStart: function () {   
   start.disabled = !isNumber(salaryAmount.value);
